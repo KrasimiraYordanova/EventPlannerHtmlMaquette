@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2911c80a8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>Event type form</title>
+</head>
+
+<body>
+    <h1>Modal</h1>
+    <div class="overlay hidden">
+
+        <div class="dashboard-center-container">
+            <h3 class="dashboard-tertiary dashboard-tertiary-center">Information sur le type d'événement</h3>
+            <div class="bkgrnd-block-registerform">
+                <div class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form action="/action_page.php" class="register-form">
+                    <label for="firstname">eventname:</label>
+                    <input type="text" id="firstname" name="firstname">
+                    <label for="lastname">eventDate:</label>
+                    <input type="date" id="lastname" name="lastname">
+                    <label for="budget">eventBudget:</label>
+                    <input type="text" id="budget" name="budget">
+                    <label for="location">event location:</label>
+                    <input type="text" id="location" name="location">
+                    <label for="bridesname">bride's name:</label>
+                    <input type="text" id="bridesname" name="bridesname">
+                    <label for="bridesemail">bride's email:</label>
+                    <input type="email" id="bridesemail" name="bridesemail">
+                    <label for="groomsname">groom's name:</label>
+                    <input type="text" id="groomsname" name="groomsname">
+                    <label for="groomsemail">groom's email:</label>
+                    <input type="email" id="groomsemail" name="groomsemail">
+                    <input type="file" name="file">
+                    <input type="submit" class="btn formBtn" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
