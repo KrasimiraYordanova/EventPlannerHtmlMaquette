@@ -16,24 +16,31 @@
 
             <form action="/action_page.php" class="parameters-form">
                 <div class="left-part">
-                    <label for="name">Nom de mariée:</label>
-                    <input type="text" id="name" name="name">
-                    <label for="email">Email de mariée:</label>
-                    <input type="email" id="emaill" name="email">
-                    <label for="namem">Nom de marié:</label>
-                    <input type="text" id="namem" name="namem">
-                    <label for="email">Email de marié:</label>
-                    <input type="email" id="emaill" name="email">
+                    <label for="ename">Nom de l'événement:</label>
+                    <input type="text" class="ename" name="ename">
+
+                    <label for="edate">Date de l'événement:</label>
+                    <input type="date" class="edate" name="edate">
+
+                    <label for="ebudget">Budget de l'événement:</label>
+                    <input type="text" class="ebudget" name="ebudget">
+
+                    <label for="elocation">Lieu de l'événement:</label>
+                    <input type="text" class="elocation" name="elocation">
                 </div>
                 <div class="right-part">
-                    <label for="ename">Nom de l'événement:</label>
-                    <input type="text" id="ename" name="ename">
-                    <label for="edate">Date de l'événement:</label>
-                    <input type="date" id="edate" name="edate">
-                    <label for="ebudget">Budget de l'événement:</label>
-                    <input type="text" id="ebudget" name="ebudget">
-                    <label for="elocation">Lieu de l'événement:</label>
-                    <input type="text" id="elocation" name="elocation">
+                    <label for="name">Nom de mariée:</label>
+                    <input type="text" class="bname" name="name">
+
+                    <label for="email">Email de mariée:</label>
+                    <input type="email" class="bemail" name="email">
+
+                    <label for="namem">Nom de marié:</label>
+                    <input type="text" class="gname" name="namem">
+
+                    <label for="email">Email de marié:</label>
+                    <input type="email" class="gemail" name="email">
+                    
                     <label for="file">Photo de l'evenement:</label>
                     <input type="file" name="file">
                     <input type="submit" class="btn formBtn" value="Save">
