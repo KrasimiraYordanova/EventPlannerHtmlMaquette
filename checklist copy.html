@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Main Dashboard</title>
+    <title>Checklist</title>
 </head>
 
 <body>
-
-    <nav class="nav nav__header nav-margbtm">
+    <!-- NAVIGATION -->
+    <nav class="nav nav__header">
         <h3 class="dashboard-tertiary nav__logo">Event Planner</h3>
         <!-- <img src="images/GAIA-FINAL-LOGO.png" alt="GAIA" class="nav__logo" id="logo" data-version-number="3.0" /> -->
         <ul class="nav__links">
@@ -38,39 +38,35 @@
             </li>
 
         </ul>
-    </nav> 
+    </nav>
 
     <div class="dashboard-center-container">
-        <h1 class="dashboard-title">My Event Planner</h1>
+        <div class="item-border">
+            <h2 class="item-title">Checklist</h2>
+            <div class="item-summery">
+                <h3 class="item-count">Tâches terminées: </h3>
+                <h3 class="item-count">Tâches restantes: </h3>
+            </div>
+        </div>
+
         <div class="bkgrnd-block">
-            <div class="flex-block">
-                <div class="left">
-                    <h2 class="dashboard-secondary">Tous mes événements</h2>
-                    <h2 class="dashboard-secondary">Mes événements actuels</h2>
-                    <div class="list">
-                        <h3 class="dashboard-tertiary">Wedding</h3>
-                        <h3 class="dashboard-tertiary">Babyshower</h3>
-                        <h3 class="dashboard-tertiary">Hen's party</h3>
+
+            <div class="item-list">
+                <div class="item-list-single">
+                    <div class="checklist-checkbox">
+                        <input type="checkbox">
+                        <p class="item-parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit enim quas
+                            et, laborum nemo sint voluptates cupiditate. Quisquam, veritatis tempore?</p>
                     </div>
-                    <h2 class="dashboard-secondary">Mes trois derniers événements passés</h2>
-                    <div class="list">
-                        <h3 class="dashboard-tertiary">Wedding</h3>
-                        <h3 class="dashboard-tertiary">Babyshower</h3>
-                        <h3 class="dashboard-tertiary">Hen's party</h3>
-                    </div>
-                </div>
-                <div class="right">
-                    <h2 class="dashboard-secondary">Créez votre événement</h2>
-                    <div class="eventtype-list list">
-                        <h3 class="dashboard-tertiary">Wedding</h3>
-                        <h3 class="dashboard-tertiary">Babyshower</h3>
-                        <h3 class="dashboard-tertiary">Hen's party</h3>
-                        <h3 class="dashboard-tertiary">Anniversary</h3>
-                        <h3 class="dashboard-tertiary">Anniversary</h3>
+                    <div class="action-buttons">
+                        <p><a href="#">edit</a>
+                        <p><a href="#">delete</a></p>
                     </div>
                 </div>
             </div>
+
         </div>
+        <a href="#" class="btn btn-item">Add checklist</a>
     </div>
 
     <!-- FOOTER SECTION -->

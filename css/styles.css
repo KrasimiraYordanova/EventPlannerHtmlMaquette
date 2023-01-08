@@ -125,7 +125,6 @@ body {
 }
 
 .nav__logo {
-    height: 8rem;
     align-self: center;
 }
 
@@ -153,6 +152,10 @@ body {
 
 .inactives {
     color: #999;
+}
+
+.nav-margbtm {
+    margin-bottom: 3rem;
 }
 
 /*  NAVIGATION LINKS 6 DROPDOWN MENU */
@@ -201,6 +204,7 @@ body {
 }
 
 .footer {
+    margin-top: 5rem;
     background: #dbdbdb;
     color: #fff;
     padding: 5rem 5rem 1rem 5rem;
@@ -848,6 +852,11 @@ ul {
     margin-bottom: 1rem;
 }
 
+.checklist-checkbox {
+    display: flex;
+    gap: 1rem;
+}
+
 .item-list-single {
     display: flex;
     flex-direction: row;
@@ -885,6 +894,27 @@ ul {
     margin-bottom: 2rem;
 }
 
+/* EVENT LIST */
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    position: relative;
+}
+.actionb-absolute {
+    position:absolute;
+    top: 5px;
+    left: 10rem;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.item-list-event {
+    border-radius: 0.1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
 /* PHOTOS */
 .photo-list {
     display: grid;
@@ -905,15 +935,16 @@ ul {
     margin-bottom: 1rem;
 }
 
-.btn-dark {
-    background-color: #333;
-}
-
 .figure-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.btn-dark {
+    background-color: #333;
+}
+
 
 
 /* WEBSITE */
@@ -1479,6 +1510,17 @@ ul {
         flex: 1 0 auto;
         max-width: 49%;
     }
+
+    .event-list {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        gap: 1rem;
+    }
+    .item-list-event {
+        flex: 1 0 auto;
+        max-width: 49%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -1534,6 +1576,17 @@ ul {
     }
 
     .item-list-photo {
+        flex: 1 0 auto;
+        max-width: 100%;
+    }
+
+    .event-list {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        gap: 1rem;
+    }
+    .item-list-event {
         flex: 1 0 auto;
         max-width: 100%;
     }
@@ -1728,5 +1781,13 @@ ul {
 @media screen and (max-width: 450px) {
    .hamburger {
         margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1454px) {
+    .event-list {
+        display: grid;
+        grid-template-columns: repeat(6, 20%);
+        grid-gap: 4rem;
     }
 }
