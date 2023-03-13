@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2911c80a8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>budget form</title>
+</head>
+
+<body>
+    <h1>Modal</h1>
+    <div class="overlay hidden">
+
+        <div class="dashboard-center-container">
+            <h3 class="dashboard-tertiary dashboard-tertiary-center">budget</h3>
+            <div class="bkgrnd-block-itemform">
+                <div class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form action="/action_page.php" class="item-form">
+                    <label for="description">description:</label>
+                    <input type="text" id="description" name="description">
+
+                    <label for="totalpayed">Total payé:</label>
+                    <input type="text" id="totalpayed" name="totalpayed">
+                    <label for="remaining">Total restant:</label>
+                    <input type="text" id="remaining" name="remaining">
+
+                    <div class="items-actions">
+                        <input type="submit" class="item-button-i btn-save" value="Save">
+                        <input type="submit" class="item-button-i btn-effacer" value="Effacer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

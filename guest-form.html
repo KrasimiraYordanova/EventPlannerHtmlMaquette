@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2911c80a8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>guest form</title>
+</head>
+
+<body>
+    <h1>Modal</h1>
+    <div class="overlay hidden">
+
+        <div class="dashboard-center-container">
+            <h3 class="dashboard-tertiary dashboard-tertiary-center">guest-list</h3>
+            <div class="bkgrnd-block-itemform">
+                <div class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <form action="/action_page.php" class="item-form">
+
+                    <label for="description">guest name:</label>
+                    <input type="text" id="description" name="description">
+
+                    <div class="form-guest-container">
+                        <div class="form-guest">
+                            <label for="rsvp">Rsvps:</label>
+                            <select name="rsvp" id="rsvp">
+                                <option value="attending">Attending</option>
+                                <option value="declined">Declined</option>
+                            </select>
+                        </div>
+
+                        <div class="form-guest">
+                            <label for="diet">Diet:</label>
+                            <select name="diet" id="diett">
+                                <option value="vegan">vegan</option>
+                                <option value="vegetarin">vegetarian</option>
+                                <option value="vegetarian">vegetarian</option>
+                            </select>
+                        </div>
+
+                        <div class="form-guest">
+                            <label for="table">Table:</label>
+                            <select name="table" id="table">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label for="email">guest email:</label>
+                    <input type="text" id="email" name="email">
+                    <label for="phone">guest phone:</label>
+                    <input type="text" id="phone" name="phone">
+                    <label for="address">guste address:</label>
+                    <input type="text" id="address" name="address">
+
+
+                    <div class="items-actions">
+                        <input type="submit" class="item-button-i btn-save" value="Save">
+                        <input type="submit" class="item-button-i btn-effacer" value="Effacer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
