@@ -519,6 +519,19 @@ a {
 .invitation__btn {
   margin-top: 5rem; }
 
+.legals {
+  padding: 3rem; }
+  .legals__container {
+    text-align: center; }
+  .legals__content {
+    margin: 0 auto;
+    max-width: 80rem; }
+  .legals__content p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; }
+  .legals__strong {
+    font-weight: bold; }
+
 .main-dashboard__flex {
   display: flex;
   gap: 5rem; }
@@ -535,6 +548,16 @@ a {
 
 .main-dashboard__eventtype h3:not(:last-child) {
   margin: 2rem 0; }
+
+.politics {
+  padding: 5rem 5rem; }
+  .politics__container {
+    max-width: 100rem;
+    margin: 0 auto; }
+  .politics__content p,
+  .politics ul {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; }
 
 .items-container__item-space {
   margin: 2rem 0;
