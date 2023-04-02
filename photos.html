@@ -6,30 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/2911c80a8d.js" crossorigin="anonymous"></script>
     <title>Photos</title>
 </head>
 
 <body>
-    <div class="dashboard-center-container">
-        <div class="item-border">
-            <h2 class="item-title">My pre-event photos</h2>
+    <section class="dashboard-container">
+        <div class="items-container">
+            <div class="items-container__item-space">
+                <h2 class="items-container__item-title">Event photos</h2>
+            </div>
+
+            <div class="bkgrnd-block">
+
+                <div class="event-photos">
+                    <div class="event-photos__imgbox">
+                        <img class="event-photos__img" src="images/heart.jpg" alt="image">
+                    </div>
+                    <div class="event-photos__imgbox">
+                        <img class="event-photos__img" src="images/heart.jpg" alt="image">
+                    </div>
+                </div>
+
+            </div>
+
+            <form class="event-photos__form" action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input class="btn event-photos__btn" id="myFileBtn" type="submit">
+            </form>
+
+            <button>
+                <i class="event-photos__delete fa-solid fa-xmark"></i>
+            </button>
         </div>
 
-        <div class="bkgrnd-block">
-            <div class="photo-list">
-                <div class="item-list-photo">
-                    <img class="wedding-img" src="images/heart.jpg" alt="wedding">
-                </div>
-                <div class="item-list-photo">
-                    <img class="wedding-img" src="images/heart.jpg" alt="wedding">
-                </div>
-            </div>
-        </div>
-        <form class="photo-form" action="/action_page.php">
-            <input type="file" id="myFile" name="filename">
-            <input class="btn formBtn-photo" id="myFileBtn" type="submit">
-        </form>
-    </div>
+        
+    </section>
 </body>
 
 </html>

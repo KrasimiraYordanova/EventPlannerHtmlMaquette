@@ -12,30 +12,25 @@
 </head>
 
 <body>
-    <h1>Modal</h1>
-    <div class="overlay hidden">
 
-        <div class="dashboard-center-container">
-            <h3 class="dashboard-tertiary dashboard-tertiary-center">Check-list</h3>
-            <div class="bkgrnd-block-itemform">
-                <div class="icon-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <form action="/action_page.php" class="item-form">
-                    <div class="form-checklist">
-                        <input type="checkbox" name="description" id="description">
-                        <label for="description">to do:</label>
-                        <input type="text" id="description" name="description">
+    <section class="form-container">
+        <div class="form-container__square">
+            <h3 class="dashboard-tertiary form-container__title">Add/Edit To-do</h3>
+            <div class="form__bkgrnd-block">
+                <form class="form" action="/action_page.php">
+                    <div class="form__items form__items--checklist">
+                        <input class="form__input form__input--check" type="checkbox" name="description">
+                        <!-- <label class="form__label" for="description">to do:</label> -->
+                        <input class="form__input form__input--text" type="text" name="description">
                     </div>
-
-                    <div class="items-actions">
-                        <input type="submit" class="item-button-i btn-save" value="Save">
-                        <input type="submit" class="item-button-i btn-effacer" value="Effacer">
+                    <div class="form__actions">
+                        <input type="submit" class="form__button-i btn btn-save" value="Save">
+                        <input type="submit" class="form__button-i btn btn-effacer" value="Effacer">
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

@@ -13,32 +13,27 @@
 </head>
 
 <body>
-    <h1>Modal</h1>
-    <div class="overlay hidden">
-
-        <div class="dashboard-center-container">
-            <h3 class="dashboard-tertiary dashboard-tertiary-center">budget</h3>
-            <div class="bkgrnd-block-itemform">
-                <div class="icon-close">
-                    <i class="fa-solid fa-xmark"></i>
+    <section class="form-container">
+            <div class="form-container__square">
+                <h3 class="dashboard-tertiary form-container__title">Add/Edit expense</h3>
+                <div class="form__bkgrnd-block">
+                    <form class="form" action="/action_page.php">
+                        <div class="form__items">
+                            <label class="form__label" for="description">description:</label>
+                            <input class="form__input form__input--text" type="text" name="description" id="description">
+                            <label class="form__label" for="totalCost">total cost:</label>
+                            <input class="form__input form__input--text" type="text" name="totalCost" id="totalCost">
+                            <label class="form__label" for="totalPaid">total paid</label>
+                            <input class="form__input form__input--text" type="text" name="totalPaid" id="totalPaid">
+                        </div>
+                        <div class="form__actions">
+                            <input type="submit" class="form__button-i btn btn-save" value="Save">
+                            <input type="submit" class="form__button-i btn btn-effacer" value="Effacer">
+                        </div>
+                    </form>
                 </div>
-                <form action="/action_page.php" class="item-form">
-                    <label for="description">description:</label>
-                    <input type="text" id="description" name="description">
-
-                    <label for="totalpayed">Total payé:</label>
-                    <input type="text" id="totalpayed" name="totalpayed">
-                    <label for="remaining">Total restant:</label>
-                    <input type="text" id="remaining" name="remaining">
-
-                    <div class="items-actions">
-                        <input type="submit" class="item-button-i btn-save" value="Save">
-                        <input type="submit" class="item-button-i btn-effacer" value="Effacer">
-                    </div>
-                </form>
             </div>
-        </div>
-    </div>
+        </section>
 </body>
 
 </html>

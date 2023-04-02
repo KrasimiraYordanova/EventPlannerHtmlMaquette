@@ -5,51 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2911c80a8d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Website</title>
 </head>
 
 <body>
-    <div class="dashboard-center-container">
-
-        <div class="margin"></div>
-
-        <div class="bkgrnd-block">
-            <div class="website-image-div">
-                <img src="images/heart.jpg" alt="weddingPhoto" class="website-image">
+    <div class="dashboard-container">
+        <div class="items-container">
+            <div class="items-container__item-space">
+                <h2 class="items-container__item-title">Invitations, Change Layout</h2>
             </div>
 
-            <div class="form-content">
-                <h3 class="dashboard-tertiary">Rdsvp</h3>
-                <form class="form-info" action="/action_page.php">
-                    <input type="text" id="fname" name="fname" placeholder="prénom">
-                    <input type="text" id="lname" name="lname" placeholder="nom">
-                    <input type="tel" id="tel" name="tel" placeholder="phone">
-                    <input type="email" id="email" name="email" placeholder="email">
-                    <p>Marquez votre présence</p>
-                    <div class="radio">
-                        <div>
-                            <input type="radio" id="attending" name="diet" value="attending">
-                            <label for="diet">attending</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="declined" name="diet" value="declined">
-                            <label for="diet">declined</label>
-                        </div>
-                    </div>
-                    <label for="diet">Spécificité alimentaire</label>
-                    <select name="diet" id="diet">
-                        <option value="">Select diet</option>
-                        <option value="vegan">Végétalien/ne</option>
-                        <option value="vegetarian">Végétarien/ne</option>
-                        <option value="omnivore">Omnivore</option>
-                        <option value="pescatarian">Pescatarien</option>
-                    </select>
-                    <input class="btn btn-light formBtn" type="submit" value="Submit">
-                </form>
+            <div class="bkgrnd-block ">
+                <div class="items-container__bkgrnd-block">
+                            <a class="website__btn" href="#">
+                                <i class="website__icon fa-solid fa-user"></i>
+                                <p class="website__paragraph">Kate Smith's invitation</p>
+                            </a>
+                            <a class="website__btn" href="#">
+                                <i class="website__icon fa-solid fa-user"></i>
+                                <p class="website__paragraph">Kate Smith's invitation</p>
+                            </a>
+                </div>
             </div>
         </div>
-        <div class="margin"></div>
     </div>
 </body>
 

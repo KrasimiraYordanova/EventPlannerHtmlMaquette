@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Website invitation</title>
+</head>
+
+<body>
+    <section class="dashboard-container">
+
+        <div class="bkgrnd-block">
+            <div class="invitation__imagebox">
+                <img src="images/heart.jpg" alt="weddingPhoto" class="invitation__image">
+                <div class="invitation__info">
+                    <h1 class="dashboard-secondary">Event name</h1>
+                    <h2 class="dashboard-tertiary ">Event date</h2>
+                </div>
+            </div>
+            <div class="invitation__content">
+                <h3 class="dashboard-tertiary">Rdsvp</h3>
+                <h3 class="dashboard-tertiary">Guest name</h3>
+                <form class="invitation__form" action="/action_page.php">
+                    <div class="invitation__select">
+                        <p>Marquez votre présence</p>
+                        <div class="invitation__radio">
+                            <div>
+                                <input type="radio" id="attending" name="diet" value="attending">
+                                <label for="diet">attending</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="declined" name="diet" value="declined">
+                                <label for="diet">decline</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invitation__select">
+                        <label for="diet">Spécificité alimentaire</label>
+                        <select name="diet" id="diet">
+                            <option value="">Select diet</option>
+                            <option value="vegan">Végétalien/ne</option>
+                            <option value="vegetarian">Végétarien/ne</option>
+                            <option value="omnivore">Omnivore</option>
+                            <option value="pescatarian">Pescatarien</option>
+                        </select>
+                    </div>
+                    <input class="btn invitation__btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

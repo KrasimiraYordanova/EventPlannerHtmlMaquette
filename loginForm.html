@@ -10,18 +10,24 @@
 </head>
 
 <body>
-    <div class="dashboard-center-container login">
-        <h3 class="dashboard-tertiary dashboard-tertiary-center">Login form</h3>
-        <div class="bkgrnd-block-registerform">
-            <form action="/action_page.php" class="register-form">
-                <label for="email">Email:</label>
-                <input type="email" id="emaill" name="email">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-                <input type="submit" class="btn formBtn" value="Save">
-            </form>
+    <section class="form-container">
+        <div class="form-container__square">
+            <h3 class="dashboard-tertiary form-container__title">Login</h3>
+            <div class="form__bkgrnd-block">
+                <form class="form" action="/action_page.php">
+                    <div class="form__items">
+                        <label class="form__label" for="totalCost">Email:</label>
+                        <input class="form__input form__input--text" type="text" name="totalCost" id="totalCost">
+                        <label class="form__label" for="totalPaid">Password:</label>
+                        <input class="form__input form__input--text" type="text" name="totalPaid" id="totalPaid">
+                    </div>
+                    <div class="form__actions">
+                        <input type="submit" class="form__button-i btn btn__form" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

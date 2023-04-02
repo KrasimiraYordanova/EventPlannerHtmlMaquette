@@ -12,38 +12,36 @@
 </head>
 
 <body>
-    <h1>Modal</h1>
-    <!-- <div class="overlay hidden"> -->
-
-        <div class="dashboard-center-container">
-            <h3 class="dashboard-tertiary dashboard-tertiary-center">Information sur le type d'événement</h3>
-            <div class="bkgrnd-block-registerform">
-                <div class="icon-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <form action="/action_page.php" class="register-form">
-                    <label for="firstname">eventname:</label>
-                    <input type="text" id="firstname" name="firstname">
-                    <label for="lastname">eventDate:</label>
-                    <input type="date" id="lastname" name="lastname">
-                    <label for="budget">eventBudget:</label>
-                    <input type="text" id="budget" name="budget">
-                    <label for="location">event location:</label>
-                    <input type="text" id="location" name="location">
-                    <label for="bridesname">bride's name:</label>
-                    <input type="text" id="bridesname" name="bridesname">
-                    <label for="bridesemail">bride's email:</label>
-                    <input type="email" id="bridesemail" name="bridesemail">
-                    <label for="groomsname">groom's name:</label>
-                    <input type="text" id="groomsname" name="groomsname">
-                    <label for="groomsemail">groom's email:</label>
-                    <input type="email" id="groomsemail" name="groomsemail">
-                    <input type="file" name="file">
-                    <input type="submit" class="btn formBtn" value="Save">
+    <section class="form-container">
+        <div class="form-container__square">
+            <h3 class="dashboard-tertiary form-container__title">Event Name</h3>
+            <div class="form__bkgrnd-block">
+                <form class="form" action="/action_page.php">
+                    <div class="form__items">
+                        <label class="form__label" for="userFirstName">Event name:</label>
+                        <input class="form__input form__input--text" type="text" name="userFirstName" id="userFirstName">
+                        <label class="form__label" for="userSername">Event date:</label>
+                        <input class="form__input form__input--text" type="text" name="userSername" id="userSername">
+                        <label class="form__label" for="userEmail">Event budget:</label>
+                        <input class="form__input form__input--text" type="text" name="userEmail" id="userEmail">
+                        <label class="form__label" for="userPassword">Event location:</label>
+                        <input class="form__input form__input--text" type="text" name="userPassword" id="userPassword">
+                        <label class="form__label" for="userPhone">Bride's name:</label>
+                        <input class="form__input form__input--text" type="text" name="userPhone" id="userPhone">
+                        <label class="form__label" for="userAddress">Bride's email:</label>
+                        <input class="form__input form__input--text" type="text" name="userAddress" id="userAddress">
+                        <label class="form__label" for="userCity">Groom's name:</label>
+                        <input class="form__input form__input--text" type="text" name="userCity" id="userCity">
+                        <label class="form__label" for="userPhoto">Groom's email:</label>
+                        <input class="form__input form__input--text" type="text" name="userPhoto" id="userPhoto">
+                    </div>
+                    <div class="form__actions">
+                        <input type="submit" class="form__button-i btn btn__form" value="Submit">
+                    </div>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>
